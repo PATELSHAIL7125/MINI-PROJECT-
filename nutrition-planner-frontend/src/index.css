@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nav-link {
+  @apply px-9 text-gray-700 hover:text-green-600 py-2 font-medium transition-colors duration-200;
+}
+
 /* Full-screen fix */
 body {
   margin: 0;
@@ -80,7 +84,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: #f5fdf8;
+  background: #4a3aff;
   padding: 15px;
   color: white;
 }
@@ -92,9 +96,12 @@ body {
 
 /* Custom Image */
 .custom-image {
-  width: 1100px;
-  height: 600px;
+  height: 500px;
+  width: 650px; /* Adjust width automatically */
+  max-width: 100%; /* Ensures it doesn't exceed the container */
+  object-fit: cover; /* Ensures it fills the space properly */
 }
+
 
 /* Typography */
 h1 {
@@ -110,11 +117,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #22c55e;
+  background-color: rgb(72, 188, 72);
   cursor: pointer;
   transition: border-color 0.25s;
   color: rgb(255, 255, 255);
-  margin-right: 10px;
+  margin-right: 410px;
 }
 
 button:hover {
@@ -129,7 +136,7 @@ button:focus-visible {
 /* Links */
 a {
   font-weight: 500;
-  color: black;
+  color: rgb(209, 213, 219);
   text-decoration: inherit;
   padding: 8px 12px;
   transition: all 0.3s ease-in-out;

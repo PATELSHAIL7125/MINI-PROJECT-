@@ -18,35 +18,14 @@ const Navbar = () => {
                 NutriPlane
               </span>
             </div>
+</div>
 
-            {/* Desktop Navigation - Adjusted spacing */}
-            <div className="hidden md:flex items-center space-x-15">
-              <Link
-                to="/home"
-                className="text-grey-700 hover:text-green-600 px-2 py-2 font-medium transition-colors duration-200"
-              >
-                Home
-              </Link>
-              <Link
-                to="/meal-planner"
-                className="text-gray-700 hover:text-green-600 px-2 py-2 font-medium transition-colors duration-200"
-              >
-                Meal Plans
-              </Link>
-              <Link
-                to="/aihelper"
-                className="text-gray-700 hover:text-green-600 px-2 py-2 font-medium transition-colors duration-200"
-              >
-                AI Helper
-              </Link>
-              <Link
-                to="/about"
-                className="text-gray-700 hover:text-green-600 px-2 py-2 font-medium transition-colors duration-200"
-              >
-                About
-              </Link>
-            </div>
-          </div>
+<div className="hidden md:flex items-center space-x-6">
+  <Link to="/home" className="nav-link">Home</Link>
+  <Link to="/meal-planner" className="nav-link">Meal Plans</Link>
+  <Link to="/aihelper" className="nav-link">AI Helper</Link>
+  <Link to="/about" className="nav-link">About</Link>
+</div>
 
           {/* Right Section: Get Started Button */}
           <Link
