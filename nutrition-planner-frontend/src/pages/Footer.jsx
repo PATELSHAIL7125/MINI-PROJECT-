@@ -36,7 +36,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-3 text-green-400">Quick Links</h3>
             <ul className="space-y-1">
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300 transition-colors duration-200 inline-flex items-center py-1">
+                <a href="#" className=" hover:text-green-300 transition-colors duration-200 inline-flex items-center py-1">
                   <span className="text-sm mr-2">•</span>
                   Home
                 </a>
