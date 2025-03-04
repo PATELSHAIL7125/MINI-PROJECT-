@@ -31,7 +31,7 @@ function App() {
       <MealPlanProvider>       
         <Routes>
           {/* Initial redirect to login */}
-          <Route path="/" element={<Navigate replace to="/login" />} />
+          <Route path="/" element={<Navigate replace to="/home" />} />
           
           {/* Public routes without Navbar */}
           <Route path="/login" element={<Login />} />
