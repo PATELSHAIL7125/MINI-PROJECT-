@@ -467,7 +467,7 @@ const MealPlanner = () => {
       <div className="navbar bg-green-600 text-white p-4 flex justify-between items-center">
         <div className="flex items-center">
           <Leaf className="h-6 w-6 mr-2" />
-          <h1 className="text-xl font-bold">GreenMeal Planner</h1>
+          <h1 className="text-xl font-bold"></h1>
         </div>
         <div className="flex space-x-4">
           <Link to="/dashboard" className="flex items-center text-white hover:text-green-200">
@@ -573,6 +573,7 @@ const MealPlanner = () => {
             </div>
 
             <div className="flex justify-end">
+              
               <button
                 type="submit"
                 disabled={loading}

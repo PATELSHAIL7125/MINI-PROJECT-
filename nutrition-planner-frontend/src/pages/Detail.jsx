@@ -299,7 +299,7 @@ const NutritionPlannerDetails = () => {
 
           {/* Home Button */}
           <motion.button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/Home')}
             className="absolute top-0 right-0 bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg flex items-center justify-center shadow transition-all duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

@@ -88,7 +88,7 @@ const SignUp = () => {
               <path d="M2 17l10 5 10-5"></path>
               <path d="M2 12l10 5 10-5"></path>
             </svg>
-            <h1 className="logo-text">NutriPlan</h1>
+            <h1 className="logo-text">NutriVista</h1>
           </div>
           <p>Create your account and start your nutrition journey</p>
         </div>

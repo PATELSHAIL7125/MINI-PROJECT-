@@ -48,7 +48,7 @@ function App() {
               <Route path="/aihelper" element={<Aihelper />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/meal-planner" element={<Mealplanner />} />
-              <Route path="/detail/:id" element={<Detail />} />
+              <Route path="/detail" element={<Detail />} />
             </Route>
           </Route>
           
