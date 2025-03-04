@@ -102,20 +102,7 @@ h1 {
   line-height: 1.1;
 }
 
-/* Buttons */
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #22c55e;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  color: rgb(255, 255, 255);
-  margin-right: 10px;
-}
+
 
 button:hover {
   border-color: lightgreen;
@@ -129,7 +116,7 @@ button:focus-visible {
 /* Links */
 a {
   font-weight: 500;
-  color: black;
+  color: rgb(72, 188, 72);
   text-decoration: inherit;
   padding: 8px 12px;
   transition: all 0.3s ease-in-out;
