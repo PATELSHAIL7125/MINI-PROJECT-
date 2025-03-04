@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-3">
               <UtensilsCrossed className="h-6 w-6 text-green-400" />
-              <span className="ml-2 text-lg font-bold">MealMaster</span>
+              <span className="ml-2 text-lg font-bold"></span>
             </div>
             <p className="text-gray-300 text-sm mb-4">
               Simplifying meal planning for busy people.

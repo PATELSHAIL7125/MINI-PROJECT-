@@ -1,0 +1,99 @@
+/* GetStarted.css - Matching Light Green Theme */
+.get-started-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #e8f5e9;
+    background-image: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Card styling */
+  .get-started-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Title Styling */
+  .get-started-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  /* Text Styling */
+  .get-started-text {
+    color: #616161;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .get-started-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.35);
+  }
+  
+  .login-button:hover {
+    background-color: #388e3c;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.45);
+  }
+  
+  .signup-button {
+    background-color: white;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+  }
+  
+  .signup-button:hover {
+    background-color: #e8f5e9;
+  }
+  
+  /* Account Text */
+  .already-account {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #616161;
+  }
+  
+  .login-link {
+    color: #4caf50;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+    color: #388e3c;
+  }
+  
