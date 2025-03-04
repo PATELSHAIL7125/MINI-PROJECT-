@@ -31,7 +31,7 @@ function App() {
       <MealPlanProvider>       
         <Routes>
           {/* Initial redirect to login */}
-          <Route path="/" element={<Navigate replace to="/login" />} />
+          <Route path="/" element={<Navigate replace to="/home" />} />
           
           {/* Public routes without Navbar */}
           <Route path="/login" element={<Login />} />
@@ -48,7 +48,7 @@ function App() {
               <Route path="/aihelper" element={<Aihelper />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/meal-planner" element={<Mealplanner />} />
-              <Route path="/detail/:id" element={<Detail />} />
+              <Route path="/detail" element={<Detail />} />
             </Route>
           </Route>
           

@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <UtensilsCrossed className="h-8 w-8 text-green-600" />
               <span className="ml-2 text-xl font-bold text-gray-800">
-                NutriPlane
+              NutriVista
               </span>
             </div>
 </div>
@@ -92,3 +92,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

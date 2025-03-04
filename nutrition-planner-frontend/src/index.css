@@ -109,6 +109,7 @@ h1 {
   line-height: 1.1;
 }
 
+<<<<<<< HEAD
 /* Buttons */
 button {
   border-radius: 8px;
@@ -123,6 +124,9 @@ button {
   color: rgb(255, 255, 255);
   margin-right: 410px;
 }
+=======
+
+>>>>>>> 5cb5877023ea9bf9bb670c4d6b584bc3fca8f381
 
 button:hover {
   border-color: lightgreen;
@@ -136,7 +140,11 @@ button:focus-visible {
 /* Links */
 a {
   font-weight: 500;
+<<<<<<< HEAD
   color: rgb(209, 213, 219);
+=======
+  color: rgb(72, 188, 72);
+>>>>>>> 5cb5877023ea9bf9bb670c4d6b584bc3fca8f381
   text-decoration: inherit;
   padding: 8px 12px;
   transition: all 0.3s ease-in-out;
