@@ -62,17 +62,30 @@ const MealPlanner = () => {
       }
 
       const data = await response.json();
+      console.log("API Response:", data); // For debugging
 
-      // Format the API response to match your mock data structure
-      const formattedMeals = data.meals.map((meal) => ({
-        id: meal.id,
-        title: meal.title,
-        readyInMinutes: meal.readyInMinutes,
-        servings: meal.servings,
-        sourceUrl: meal.sourceUrl,
-        imageType: 'jpg', // Spoonacular images are typically in JPG format
-        mealType: meal.type || 'dinner', // Default to 'dinner' if meal type is not provided
-      }));
+      // Manually assign meal types based on array position
+      // The API typically returns meals in order: breakfast, lunch, dinner
+      const mealTypes = ['breakfast', 'lunch', 'dinner'];
+      
+      // Ensure we have three meals with proper types
+      const formattedMeals = data.meals.map((meal, index) => {
+        // Use the index to determine meal type (0=breakfast, 1=lunch, 2=dinner)
+        // If there are more than 3 meals, cycle through the types
+        const mealType = mealTypes[index % mealTypes.length];
+        
+        return {
+          id: meal.id,
+          title: meal.title,
+          readyInMinutes: meal.readyInMinutes,
+          servings: meal.servings,
+          sourceUrl: meal.sourceUrl,
+          imageType: 'jpg', // Spoonacular images are typically in JPG format
+          mealType: mealType, // Assign the meal type based on index
+        };
+      });
+
+      console.log("Formatted meals with assigned types:", formattedMeals);
 
       const formattedNutrients = {
         calories: data.nutrients.calories,
@@ -160,6 +173,8 @@ const MealPlanner = () => {
           ],
         },
       };
+
+      console.log("Organized Meals:", organizedMeals); // For debugging
 
       // Update state with the new meal plan
       setMealPlan(organizedMeals);
@@ -465,10 +480,10 @@ const MealPlanner = () => {
   return (
     <div className="dashboard-wrapper bg-gradient-to-b from-green-50 to-white min-h-screen">
       <div className="navbar bg-green-600 text-white p-4 flex justify-between items-center">
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <Leaf className="h-6 w-6 mr-2" />
-          <h1 className="text-xl font-bold">GreenMeal Planner</h1>
-        </div>
+           <h1 className="text-xl font-bold">GreenMeal Planner</h1>
+        </div> */}
         <div className="flex space-x-4">
           <Link to="/dashboard" className="flex items-center text-white hover:text-green-200">
             <ArrowLeft className="h-4 w-4 mr-1" />
