@@ -23,6 +23,7 @@ const Navbar = () => {
 <div className="hidden md:flex items-center space-x-6">
   <Link to="/home" className="nav-link">Home</Link>
   <Link to="/meal-planner" className="nav-link">Meal Plans</Link>
+  <Link to="/dashboard" className="nav-link">Dashboard</Link>
   <Link to="/aihelper" className="nav-link">AI Helper</Link>
   <Link to="/about" className="nav-link">About</Link>
 </div>

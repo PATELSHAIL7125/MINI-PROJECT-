@@ -485,9 +485,9 @@ const MealPlanner = () => {
            <h1 className="text-xl font-bold">GreenMeal Planner</h1>
         </div> */}
         <div className="flex space-x-4">
-          <Link to="/dashboard" className="flex items-center text-white hover:text-green-200">
-            <ArrowLeft className="h-4 w-4 mr-1" />
-            Back to Dashboard
+          <Link to="/detail" className="flex items-center text-white hover:text-green-200">
+            {/* <ArrowLeft className="h-4 w-4 mr-1" /> */}
+            BMI CALCULATOR
           </Link>
         </div>
       </div>

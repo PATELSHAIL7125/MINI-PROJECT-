@@ -6,6 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NutritionPlannerDetails = () => {
   const navigate = useNavigate();
 
+  const handleMealPlanClick = () => {
+    navigate('/meal-planner');
+  };
+
   // State management
   const [userDetails, setUserDetails] = useState({
     age: '',
@@ -828,13 +832,14 @@ const NutritionPlannerDetails = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.1, duration: 0.5 }}
                   >
-                    <motion.button 
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-medium shadow transition-all duration-300"
-                    >
-                      Get Detailed Meal Plan
-                    </motion.button>
+                    <motion.button
+      onClick={handleMealPlanClick}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-medium shadow transition-all duration-300"
+    >
+      Get Detailed Meal Plan
+    </motion.button>
                     
                     <motion.button 
                       onClick={handleReset}
