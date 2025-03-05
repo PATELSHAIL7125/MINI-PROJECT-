@@ -102,7 +102,7 @@ const Hero = () => {
             }}
           >
             <img
-              src= "https://files.oaiusercontent.com/file-B23qjMUGgiFxo7J5G6GsXn?se=2025-03-03T05%3A57%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D129d3b68-5b9b-4579-b729-93ddd1069c8e.webp&sig=/mUA4989o4wQL3MPxV%2BNC%2BA7BFgRBdzBemDk1p3udu4%3D"
+              src= "./public/home.jpg"
               alt="Healthy meal preparation"
               className="custom-image rounded-3xl shadow-xl transform hover:scale-105  transition-transform duration-500 ease-in-out"
             />

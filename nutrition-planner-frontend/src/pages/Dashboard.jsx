@@ -125,7 +125,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-green-50">
       {/* Header with logo and navigation */}
-      <header className="bg-white shadow-sm">
+      {/* <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link to="/" className="flex items-center group">
             <svg 
@@ -166,9 +166,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
-      {showNotification && (
+      {/* {showNotification && (
         <div className="fixed top-5 right-5 z-50 bg-white rounded-lg shadow-lg p-4 max-w-md">
           <div className="flex items-start">
             <div className="flex-shrink-0 bg-green-100 rounded-full p-2">
@@ -197,7 +197,7 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-8">
