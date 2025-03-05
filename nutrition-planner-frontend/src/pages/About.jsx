@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Leaf, Users, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Import for animations
 import { useState } from "react";
@@ -230,7 +231,11 @@ const About = () => {
                   }`}
                   style={{ transitionDelay: "800ms" }}
                 >
-                  <img src="./public/about.jpg"  alt="Healthy Meal" className="w-full h-full object-cover" />
+                  <img
+                    src="./public/about.jpg"
+                    alt="Healthy Meal"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -374,7 +379,6 @@ const About = () => {
                       : "opacity-0 translate-y-20 rotateX-90"
                   }`}
                 >
-
                   <div className="w-full h-64 bg-gray-200 flex items-center justify-center transform transition-all duration-500 group-hover:scale-105 overflow-hidden">
                     <img
                       src={`/${member.name
@@ -470,10 +474,14 @@ const About = () => {
               style={{ transitionDelay: "600ms" }}
             >
               
-              <button className="border border-green-600 text-green-600 px-6 py-3 rounded-md hover:bg-green-50 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 font-['Verdana'] relative overflow-hidden group">
-                <span className="relative z-10">View Sample Plans</span>
+                <Link
+                  to="/meal-planner"
+                  className="relative z-10 border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-100 transition duration-300 flex items-center justify-center"
+                >
+                  Generate Your Meal
+                </Link>
                 <span className="absolute top-0 left-0 right-0 bottom-0 bg-green-200 opacity-0 group-hover:opacity-50 transform scale-0 group-hover:scale-100 rounded-full transition-all duration-500 z-0"></span>
-              </button>
+             
             </div>
           </div>
         </div>
