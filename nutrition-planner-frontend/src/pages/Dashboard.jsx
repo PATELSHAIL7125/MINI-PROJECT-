@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend, PieChart, Pie, Cell } from 'recharts';
 import { Leaf, ChevronUp, ChevronDown } from 'lucide-react';
 import { useMealPlan } from '../context/MealPlanContext';
+import { RefreshCcw } from "lucide-react"
 
 const Dashboard = () => {
   // Get data from context
@@ -107,7 +108,8 @@ const Dashboard = () => {
       <p className="text-gray-500 mb-6">Generate your first meal plan to see your nutrition data here.</p>
       <Link 
         to="/meal-planner"
-        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+        className="inline-flex items-center px-4 py-2 border border-green-300 text-sm font-medium rounded-md shadow-sm text-green-600 bg-white  hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400 transition duration-300"
+
       >
         Create Meal Plan
       </Link>
@@ -206,30 +208,32 @@ const Dashboard = () => {
             <p className="text-gray-500">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
           </div>
           <div className="flex space-x-4">
-            <button 
-              className="bg-white border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-50 transition duration-300 flex items-center"
-              onClick={() => {
-                // Simulate refresh
-                setIsLoading(true);
-                setTimeout(() => {
-                  setIsLoading(false);
-                  setShowNotification(true);
-                  setTimeout(() => setShowNotification(false), 3000);
-                }, 1000);
-              }}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-              Refresh
-            </button>
-            <Link 
-              to="/meal-planner"
-              className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-300"
-            >
-              Update Meal Plan
-            </Link>
-          </div>
+  <button 
+    className="bg-white border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-50 transition duration-300 flex items-center mr-5"
+    onClick={() => {
+      // Simulate refresh
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+        setShowNotification(true);
+        setTimeout(() => setShowNotification(false), 3000);
+      }, 1000);
+    }}
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+    </svg>
+    Refresh
+  </button>
+  
+  <Link
+    to="/meal-planner"
+    className="flex items-center gap-2 border border-green-500 text-green-500 px-4 py-2 rounded-md transition duration-300 pl-4 mr-2"
+  >
+    Update Meal Plan
+  </Link>
+</div>
+
         </div>
 
         {isLoading ? (

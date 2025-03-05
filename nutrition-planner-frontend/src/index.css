@@ -146,7 +146,7 @@ a:hover {
   a:hover {
     box-shadow: rgb(72, 188, 72);
   }
-  button {
+  /* button {
     background-color: rgb(72, 188, 72);
-  }
+  } */
 }
