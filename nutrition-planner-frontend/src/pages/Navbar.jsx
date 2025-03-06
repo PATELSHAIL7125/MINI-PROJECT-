@@ -13,7 +13,8 @@ const Navbar = () => {
           <div className="flex items-center space-x-60">
             {/* Logo */}
             <div className="flex items-center">
-              <UtensilsCrossed className="h-8 w-8 text-green-600" />
+              {/* <UtensilsCrossed className="h-2 w-2 text-green-600" /> */}
+              <img src="./logo.png" alt="Your Photo" className="h-15 w-15 rounded-full" mt/>
               <span className="ml-2 text-xl font-bold text-gray-800">
               NutriVista
               </span>
