@@ -232,7 +232,7 @@ const About = () => {
                   style={{ transitionDelay: "800ms" }}
                 >
                   <img
-                    src="./public/about.jpg"
+                    src="/about.jpg"
                     alt="Healthy Meal"
                     className="w-full h-full object-cover"
                   />
